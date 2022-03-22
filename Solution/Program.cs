@@ -2,7 +2,6 @@ using Solution;
 using Solution.Repositories;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
-using System.Linq;
 
 
 var session = Helper.OpenSession("User Id=postgres;Password=smile@ME;Host=localhost;Database=Solution");
@@ -13,38 +12,35 @@ var session = Helper.OpenSession("User Id=postgres;Password=smile@ME;Host=localh
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//builder.Services.AddRazorPages();
+
 
 builder.Services.AddControllers().AddNewtonsoftJson(opt =>
 {
     opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
     opt.SerializerSettings.MaxDepth = 4;
 });
+
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-});
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("v1/swagger.json", "My API V1");
-});
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Error");
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();
+
 
 
 /*
