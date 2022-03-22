@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "rOolyv0Q0pC/Zg35JZ3fZRLEho7tYRDc4KGfrz48PgA=",
+  "Source": "Solution",
+  "BasePath": "_content/Solution",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Solution.styles.css",
+      "SourceId": "Solution",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Solution",
+      "RelativePath": "Solution.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Solution.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Solution.bundle.scp.css",
+      "SourceId": "Solution",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/Solution",
+      "RelativePath": "Solution.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thiru\\source\\repos\\Solution\\Solution\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Solution.bundle.scp.css"
+    }
+  ]
+}

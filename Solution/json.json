@@ -1,0 +1,21 @@
+{
+  "<script" "type=\"text/javascript\">",
+  "function" "put()",
+  {
+
+    "var" "user",
+    "=" ["email": " Thirumoorthynew@gmail.com"]
+    ";",
+
+
+  
+
+    "$.put(\"/UserRepository/Update\"",
+    "user",
+    "function" "(data)",
+    {
+      "alert(data.toString());"
+    }
+    ");",
+  }
+}
