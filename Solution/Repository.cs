@@ -19,7 +19,7 @@ namespace Solution
             return data;
         }
 
-        public T Get(object id)
+        public T Get(int id)
         {
             var data = Session.Get<T>(id);
             return data;

@@ -25,7 +25,7 @@ namespace Solution.Controller
         public ActionResult<IEnumerable<User>> Get()
         {
             var result=repository.GetAll();
-            return Ok(result.Select(x => new
+            return Ok(result.Select(x => new User
             {
                 Id = x.Id,
                 Email = x.Email,
@@ -73,7 +73,7 @@ namespace Solution.Controller
 
         [HttpDelete]
 
-        public ActionResult<User> Delete(string id)
+        public ActionResult<User> Delete(int id)
         {
             var temp=repository.Get(id);
             repository.Delete(temp);

@@ -30,11 +30,18 @@ namespace Solution.Repositories
             Session.Flush();
         }
 
-        public new void Delete(string id)
-        {
 
-            Session.Delete(id);
-            Session.Flush();
+        public new bool Delete(int id)
+        {
+            var user = Session.Query<User>().FirstOrDefault(x => x.Id == id);
+            if (user != null)
+            {
+                Session.Delete(user);
+                Session.Flush();
+                return true;
+            }
+
+            throw new Exception("Invalid 'UserId' provided");
         }
     }
  }

@@ -43,7 +43,6 @@ C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Swashbuckle.AspNe
 C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\thiru\source\repos\Solution\Solution\obj\Debug\net6.0\Solution.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\json.json
 C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\thiru\source\repos\Solution\Solution\bin\Debug\net6.0\Newtonsoft.Json.dll

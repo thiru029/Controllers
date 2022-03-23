@@ -10,7 +10,7 @@ namespace Solution.Models
         public virtual string? Password { get; set; }
 
         public virtual bool? IsUpdated { get; set; }
-        public virtual Employee? Employee { get; set; }
+
             
     }
 
@@ -27,7 +27,6 @@ namespace Solution.Models
                 .Column("password");
             Map(x => x.IsUpdated)
                 .Column("is_updated");
-            References(x => x.Employee);
             Table("Users");
         }
     }
